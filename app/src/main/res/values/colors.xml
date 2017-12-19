@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- color palette: https://coolors.co/28293c-553e48-a82f61-959aa3-e6e8ea -->
+    <color name="colorDark">#000000</color>
+    <color name="colorPrimaryDark">#28293c</color>
+    <color name="colorPrimary">#553e48</color>
+    <color name="colorAccent">#a82f61</color>
+    <color name="colorGrey">#959aa3</color>
+    <color name="colorLight">#e6e8ea</color>
+</resources>

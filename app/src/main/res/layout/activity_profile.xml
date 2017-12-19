@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:padding="20dp"
+    tools:context="com.sunayashivakumar.github.view.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/userAvatar"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/userFullname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        android:layout_toEndOf="@+id/userAvatar"
+        android:layout_toRightOf="@+id/userAvatar"
+        android:textColor="@color/colorLight"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/userName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/userFullname"
+        android:layout_alignStart="@+id/userFullname"
+        android:layout_below="@+id/userFullname"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/colorGrey"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:id="@+id/profileButtons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="13dp"
+        android:layout_below="@+id/userAvatar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <Button
+            android:id="@+id/buttonRepos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/button2"
+            android:layout_alignBottom="@+id/button2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:textAllCaps="false"
+            android:textColor="@color/colorLight"
+            android:textSize="12sp"
+            android:onClick="getUserRepos" />
+
+        <Button
+            android:id="@+id/buttonFollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view1"
+            android:layout_marginRight="5dp"
+            android:layout_toEndOf="@+id/button"
+            android:layout_toRightOf="@+id/button"
+            android:layout_weight="1"
+            android:textAllCaps="false"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorLight"
+            android:textSize="12sp"
+            android:onClick="getUserFollowers" />
+
+        <Button
+            android:id="@+id/buttonFollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/view1"
+            android:layout_toEndOf="@+id/button2"
+            android:layout_toRightOf="@+id/button2"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:textColor="@color/colorLight"
+            android:textSize="12sp"
+            android:onClick="getUserFollowing" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/profileButtons"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorAccent" />
+
+    <LinearLayout
+        android:id="@+id/profileInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/view1">
+
+        <TextView
+            android:id="@+id/userBio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/view1"
+            android:layout_marginBottom="5dp"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:textColor="@color/colorLight"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/userLink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorGrey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/userEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="5dp"
+            android:textColor="@color/colorGrey"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/userActive"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:textColor="@color/colorGrey"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>
